@@ -47,7 +47,7 @@
         /* Tab: Reduce height */
         .tabbrowser-tab {
           min-height: 24px !important;
-          font-family: "JetBrainsMono Nerd Font";
+          font-family: "Iosevka Nerd Font";
         }
         
         /* Tab: Ensure tab height doesn't augment when arrowscrollbox is visible  */ 
@@ -63,7 +63,7 @@
         }
         
         #urlbar {
-          font-family: "JetBrainsMono Nerd Font" !important;
+          font-family: "Iosevka Nerd Font" !important;
           font-size: 14px !important;
         }
         

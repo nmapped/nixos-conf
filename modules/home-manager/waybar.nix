@@ -136,7 +136,7 @@ with lib; {
           border: none;
           border-radius: 0;
           min-height: 0;
-          font-family: "JetBrainsMono Nerd Font";
+          font-family: "Iosevka Nerd Font";
           font-size: 13px;
           padding: 0;
           margin: -0.5px;
@@ -188,6 +188,7 @@ with lib; {
         #battery.icons {
           color: #${config.lib.stylix.colors.base0B};
           background: none;
+          margin-left: -2px;
         }
               
         #network.icons {
