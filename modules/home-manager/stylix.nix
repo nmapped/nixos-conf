@@ -4,6 +4,6 @@
   stylix = {
     enable = true;
     base16Scheme = "${pkgs.base16-schemes}/share/themes/nord.yaml";
-    image = ../../assets/foggy-forest.png;
+    image = ../../assets/nixwall.png;
   };
 }
