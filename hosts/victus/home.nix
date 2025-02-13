@@ -45,6 +45,7 @@
     grim
     slurp
     swappy
+    nerd-fonts.symbols-only
     eza
     mpv
     feh
@@ -104,7 +105,7 @@
     shellIntegration.mode = "no-cursor";
     settings = {
       disable_ligatures = "never";
-      text_composition_strategy = "legacy";
+      text_composition_strategy = "platform";
       cursor_trail = 1;
       window_padding_width = 4;
     };

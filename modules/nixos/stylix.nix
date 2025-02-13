@@ -10,7 +10,7 @@
     fonts = {
       monospace = {
         package = pkgs.nerd-fonts.iosevka;
-        name = "Iosevka Nerd Font Mono";
+        name = "Iosevka Nerd Font";
       };
       sansSerif = {
         package = pkgs.inter;
@@ -29,7 +29,7 @@
     cursor = {
       package = pkgs.bibata-cursors;
       name = "Bibata-Modern-Classic";
-      size = 21;
+      size = 20;
     };
 
     opacity = {

@@ -20,6 +20,9 @@
     (final: prev: {
       nvchad = inputs.nvchad4nix.packages."${pkgs.system}".nvchad;
     })
+    # (self: super: {
+    #   edex-ui = super.callPackage ../../pkgs/edex-ui {};
+    # })
   ];
 
   # flakes
@@ -76,6 +79,7 @@
     kmonad
     brightnessctl
     git
+    direnv
     libnotify
     dunst
     waybar

@@ -38,8 +38,6 @@ in
     clang-tools
     # :lang latex & :lang org (latex previews)
     texlive.combined.scheme-medium
-    # :lang beancount
-    beancount
     fava
     # :lang nix
     age
