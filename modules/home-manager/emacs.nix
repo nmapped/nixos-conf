@@ -38,7 +38,6 @@ in
     clang-tools
     # :lang latex & :lang org (latex previews)
     texlive.combined.scheme-medium
-    fava
     # :lang nix
     age
   ];
