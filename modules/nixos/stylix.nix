@@ -3,8 +3,8 @@
 {
   stylix = {
     enable = true;
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/nord.yaml";
-    image = ../../assets/mountains.png;
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/tokyo-night-dark.yaml";
+    image = ../../assets/brain.png;
     polarity = "dark";
 
     fonts = {
@@ -35,7 +35,7 @@
     opacity = {
       desktop = 0.9;
       terminal = 0.9;
-      popups = 0.9;
+      # popups = 0.9;
     };
   };
 }

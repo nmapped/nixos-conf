@@ -96,7 +96,7 @@
         "opacity 0.95 0.8,initialClass:^(emacs)$"
 
         # See-through waybar
-        "opacity 0.95,initialClass:^(waybar)$"
+        # "opacity 0.95,initialClass:^(waybar)$"
 
 	      # Ignore maximize requests from apps. You'll probably like this.
 	      "suppressevent maximize, class:.*"

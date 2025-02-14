@@ -184,11 +184,11 @@
       nvidiaSettings = true;
       prime = {
         amdgpuBusId = "PCI:7:0:0";
-	nvidiaBusId = "PCI:1:0:0";
-	offload = {
-	  enable = true;
-	  enableOffloadCmd = true;
-	};
+        nvidiaBusId = "PCI:1:0:0";
+        offload = {
+          enable = true;
+          enableOffloadCmd = true;
+        };
       };
       package = config.boot.kernelPackages.nvidiaPackages.stable;
     };
