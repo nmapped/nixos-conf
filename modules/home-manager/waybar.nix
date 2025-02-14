@@ -210,7 +210,7 @@ with lib; {
         }
         
         #custom-cpumemi {
-          color: #${config.lib.stylix.colors.base07};
+          color: #${config.lib.stylix.colors.base05};
         }
         
         #custom-nixi {

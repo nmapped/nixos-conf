@@ -3,7 +3,7 @@
 {
   stylix = {
     enable = true;
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/tokyo-night-dark.yaml";
-    image = ../../assets/brain.png;
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/nord.yaml";
+    image = ../../assets/water-gate.jpg;
   };
 }
