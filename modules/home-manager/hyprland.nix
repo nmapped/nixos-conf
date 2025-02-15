@@ -126,7 +126,7 @@
 
 	    monitor = [
         "eDP-1, 1920x1080@60, 0x0, 1"
-        "HDMI-A-1, 1920x1080@60, auto, 1.2"
+        "HDMI-A-1, 1920x1080@60, auto, 1"
 	    ];
 
       "$mainMod" = "ALT"; # Sets "Windows" key as main modifier
