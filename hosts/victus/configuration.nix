@@ -11,6 +11,7 @@
       inputs.home-manager.nixosModules.default
       ../../modules/nixos/stylix.nix
       ../../modules/nixos/secrets.nix
+      ../../modules/nixos/laptop-pm.nix
     ];
   
   # allow unfree software
