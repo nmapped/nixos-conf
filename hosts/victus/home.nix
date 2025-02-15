@@ -14,6 +14,7 @@
     ../../modules/home-manager/rofi.nix
     ../../modules/home-manager/spotify.nix
     ../../modules/home-manager/emacs.nix
+    ../../modules/home-manager/cast.nix
     inputs.nvchad4nix.homeManagerModule
     ../../scripts/restart-xdg-portal.nix
   ];
