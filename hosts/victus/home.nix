@@ -14,7 +14,6 @@
     ../../modules/home-manager/rofi.nix
     ../../modules/home-manager/spotify.nix
     ../../modules/home-manager/emacs.nix
-    ../../modules/home-manager/cast.nix
     inputs.nvchad4nix.homeManagerModule
     ../../scripts/restart-xdg-portal.nix
   ];
@@ -55,7 +54,6 @@
     spotify-player
     qbittorrent-enhanced
     vesktop
-    vlc
 
     # # You can also create simple shell scripts directly inside your
     # # configuration. For example, this adds a command 'my-hello' to your
