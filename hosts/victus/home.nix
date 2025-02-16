@@ -45,6 +45,7 @@
     grim
     slurp
     swappy
+    btop
     nerd-fonts.symbols-only
     eza
     mpv
@@ -54,6 +55,7 @@
     spotify-player
     qbittorrent-enhanced
     vesktop
+    zathura
 
     # # You can also create simple shell scripts directly inside your
     # # configuration. For example, this adds a command 'my-hello' to your
@@ -103,7 +105,7 @@
     enable = true;
     shellIntegration.mode = "no-cursor";
     settings = {
-      font_size = 13;
+      font_size = 12;
       disable_ligatures = "never";
       text_composition_strategy = "platform";
       cursor_trail = 1;
