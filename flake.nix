@@ -11,10 +11,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    nvchad4nix = {
-      url = "github:nix-community/nix4nvchad";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    # nvchad4nix = {
+    #   url = "github:nix-community/nix4nvchad";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
 
     emacs-overlay = {
       url = "github:nix-community/emacs-overlay";

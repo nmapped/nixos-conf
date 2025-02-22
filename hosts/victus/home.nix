@@ -5,9 +5,8 @@
   imports = [
     ../../modules/home-manager/firefox.nix
     ../../modules/home-manager/hyprland.nix
-    ../../modules/home-manager/stylix.nix
+    # ../../modules/home-manager/stylix.nix
     ../../modules/home-manager/waybar.nix
-    ../../modules/home-manager/nvchad.nix
     ../../modules/home-manager/fastfetch.nix
     ../../modules/home-manager/dunst.nix
     ../../modules/home-manager/shell.nix
@@ -15,7 +14,8 @@
     ../../modules/home-manager/spotify.nix
     ../../modules/home-manager/emacs.nix
     ../../modules/home-manager/zathura.nix
-    inputs.nvchad4nix.homeManagerModule
+    # ../../modules/home-manager/nvchad.nix
+    # inputs.nvchad4nix.homeManagerModule
     ../../scripts/restart-xdg-portal.nix
   ];
 
@@ -57,6 +57,17 @@
     qbittorrent-enhanced
     vesktop
     zathura
+    android-studio
+    android-tools
+    jdk17
+    # (androidenv.composeAndroidPackages {
+    #   platformVersions = [ "33" ];
+    #   buildToolsVersions = [ "33.0.1" ];
+    #   includeEmulator = true;
+    #   includeSources = false;
+    #   includeSystemImages = true;
+    #   emulatorVersion = "30.9.5";
+    # })
 
     # # You can also create simple shell scripts directly inside your
     # # configuration. For example, this adds a command 'my-hello' to your

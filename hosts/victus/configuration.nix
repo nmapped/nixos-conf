@@ -17,11 +17,11 @@
   # allow unfree software
   nixpkgs.config.allowUnfree = true;
 
-  nixpkgs.overlays = [
-    (final: prev: {
-      nvchad = inputs.nvchad4nix.packages."${pkgs.system}".nvchad;
-    })
-  ];
+  # nixpkgs.overlays = [
+  #   (final: prev: {
+  #     nvchad = inputs.nvchad4nix.packages."${pkgs.system}".nvchad;
+  #   })
+  # ];
 
   # flakes
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
@@ -145,7 +145,7 @@
     isNormalUser = true;
     extraGroups = [ "wheel" "input" "networkmanager" ];
     hashedPasswordFile = config.age.secrets.nmapped-nixpass.path;
-    packages = [ pkgs.nvchad ];
+    # packages = [ pkgs.nvchad ];
   };
 
   # Some programs need SUID wrappers, can be configured further or are
