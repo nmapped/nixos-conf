@@ -8,7 +8,7 @@ with lib; {
     settings = [
       {
         layer = "top";
-        position = "top";
+        position = "bottom";
         modules-left = [ "custom/nixi" "hyprland/workspaces" ];
         modules-center = [ ];
         modules-right = [ 
@@ -170,7 +170,7 @@ with lib; {
         }
 
         #clock.date {
-          color: #${config.lib.stylix.colors.base0C};
+          color: #${config.lib.stylix.colors.base07};
         }
         
         #clock.time {
@@ -206,7 +206,7 @@ with lib; {
         }
         
         #custom-datei {
-          color: #${config.lib.stylix.colors.base0C};
+          color: #${config.lib.stylix.colors.base07};
         }
         
         #custom-cpumemi {

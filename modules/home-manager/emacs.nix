@@ -1,6 +1,6 @@
 { pkgs, inputs, lib, ... }:
 let
-  emacs = with pkgs; (emacsPackagesFor emacs-pgtk).emacsWithPackages (epkgs: with epkgs; [
+  emacs = with pkgs; (emacsPackagesFor (emacs29-pgtk.override { withXwidgets = true; })).emacsWithPackages (epkgs: with epkgs; [
     treesit-grammars.with-all-grammars
     vterm
     mu4e
@@ -23,6 +23,11 @@ in
     fd                  # faster projectile indexing
     imagemagick         # for image-dired
     zstd                # for undo-fu-session/undo-tree compression
+    webkitgtk
+    python3
+    python3Packages.pynput
+    python3Packages.pyqt5
+    python3Packages.pyside2
 
     ## Module dependencies
     # :email mu4e
