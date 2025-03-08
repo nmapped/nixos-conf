@@ -8,6 +8,7 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
+      ../../disko.nix
       inputs.home-manager.nixosModules.default
       ../../modules/nixos/stylix.nix
       ../../modules/nixos/secrets.nix
