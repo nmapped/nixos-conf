@@ -141,7 +141,7 @@
   # services.libinput.enable = true;
 
   # age
-  age.secrets.nmapped-nixpass.file = ../../modules/nixos/secrets/nmapped-nixpass.age;
+  age.secrets.nmapped-nixpass.file = ./secrets/nmapped-nixpass.age;
 
   # users
   users.users.nmapped = {
