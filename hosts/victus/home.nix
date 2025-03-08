@@ -14,6 +14,8 @@
     ../../modules/home-manager/spotify.nix
     ../../modules/home-manager/emacs.nix
     ../../modules/home-manager/zathura.nix
+    ../../modules/home-manager/hyprlock.nix
+    ../../modules/home-manager/swayidle.nix
     # ../../modules/home-manager/nvchad.nix
     # inputs.nvchad4nix.homeManagerModule
     ../../scripts/restart-xdg-portal.nix
@@ -39,6 +41,7 @@
   # The home.packages option allows you to install Nix packages into your
   # environment.
   home.packages = with pkgs; [
+    swayidle
     bun
     pandoc
     cargo
