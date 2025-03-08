@@ -2,7 +2,7 @@
   disko.devices = {
     disk = {
       main = {
-        device = "/dev/nvme0n1";
+        device = "/dev/disk/by-id/nvme-KINGSTON_RBUSNS8154P3256GJ1_50026B768389327E";
         type = "disk";
         content = {
           type = "gpt";

@@ -3,13 +3,13 @@ let
   users = [ nmapped ];
 in
 {
-  "nmapped-nixpass.age".publicKeys = [ nmapped ];
-  age = {
-    secrets = {
-      nmapped-nixpass = {
-        file = ./secrets/nmapped-nixpass.age;
-        owner = "nmapped";
-      };
-    };
-  };
+  "nmapped-nixos.age".publicKeys = [ nmapped ];
+  # age = {
+  #   secrets = {
+  #     nmapped-nixpass = {
+  #       file = ./secrets/nmapped-nixpass.age;
+  #       owner = "nmapped";
+  #     };
+  #   };
+  # };
 }

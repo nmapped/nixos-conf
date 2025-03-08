@@ -11,7 +11,6 @@
       ../../disko.nix
       inputs.home-manager.nixosModules.default
       ../../modules/nixos/stylix.nix
-      ../../modules/nixos/secrets.nix
       ../../modules/nixos/laptop-pm.nix
     ];
   
@@ -140,6 +139,9 @@
 
   # Enable touchpad support (enabled default in most desktopManager).
   # services.libinput.enable = true;
+
+  # age
+  age.secrets.nmapped-nixpass.file = ../../modules/nixos/secrets/nmapped-nixpass.age;
 
   # users
   users.users.nmapped = {
