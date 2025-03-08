@@ -7,13 +7,12 @@
     package = pkgs.rofi-wayland;
     extraConfig = {
       modi = "drun,run";
-      show-icons = true;
+      show-icons = false;
       location = 0;
       drun-display-format = "{name}";
       display-drun = " >";
       display-run = " >";
       display-filebrowser = " >";
-      icon-theme = "Papirus";
     };
     theme =
     let
@@ -37,6 +36,7 @@
         green = mkRgba rofiOpacity "base0B";
         blue = mkRgba rofiOpacity "base0F";
         black = mkRgb "base00";
+        width = mkLiteral "20%";
 
         background-color = mkLiteral "@bg";
 
@@ -48,6 +48,7 @@
 
       "window" = {
         height = mkLiteral "360px";
+        width = mkLiteral "300px";
         border = mkLiteral "2px";
         border-color = mkLiteral "@blue";
       };
@@ -86,13 +87,14 @@
           "prompt"
           "entry"
         ];
-        padding = mkLiteral "2px"
+        padding = mkLiteral "2px";
       };
 
       "listview" = {
         background-color = mkLiteral "@bg";
         colums = 1;
         lines = 10;
+        padding = mkLiteral "6px 0px 0px";
       };
 
       "mainbox" = {

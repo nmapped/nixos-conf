@@ -141,7 +141,8 @@
         "$mainMod, Return, exec, $terminal"
         "$mainMod, Q, killactive,"
         "$mainMod SHIFT, Q, exit,"
-        "$mainMod, E, exec, $menu"
+        "$mainMod, D, exec, $menu"
+        "$mainMod, E, exec, emacsclient -c -a \"\""
         "$mainMod, Space, togglefloating,"
         "$mainMod, R, exec, $menu"
         "$mainMod, P, pseudo, # dwindle"
@@ -203,14 +204,14 @@
 
       # Laptop multimedia keys for volume and LCD brightness
 	    bindel = [
-        ",XF86AudioRaiseVolume, exec, volume-control up"
-        ",XF86AudioLowerVolume, exec, volume-control down"
-        ",XF86AudioMute, exec, volume-control toggle"
+        ",XF86AudioRaiseVolume, exec, volbri-control volume_up"
+        ",XF86AudioLowerVolume, exec, volbri-control volume_down"
+        ",XF86AudioMute, exec, volbri-control volume_mute"
         ",XF86AudioMicMute, exec, wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"
-        ",XF86MonBrightnessUp, exec, brightness-control up"
-        ",XF86MonBrightnessDown, exec, brightness-control down"
-        "$mainMod, bracketright, exec, brightness-control up"
-        "$mainMod, bracketleft, exec, brightness-control down"
+        ",XF86MonBrightnessUp, exec, brightness_up"
+        ",XF86MonBrightnessDown, exec, brightness_down"
+        "$mainMod, bracketright, exec, brightness_up"
+        "$mainMod, bracketleft, exec, brightness_down"
 
         # Requires playerctl
         ", XF86AudioNext, exec, playerctl next"

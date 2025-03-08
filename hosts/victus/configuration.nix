@@ -71,7 +71,7 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-    neovim
+    vim
     wget
     bat
     kmonad
@@ -85,8 +85,7 @@
     wl-clipboard
     kitty
     rofi-wayland
-    (import ../../scripts/volume-control.nix { inherit pkgs; }).volume-control
-    (import ../../scripts/brightness-control.nix { inherit pkgs; }).brightness-control
+    (import ../../scripts/volbri-control.nix { inherit pkgs; }).volbri-control
   ];
 
   # desktop portals
