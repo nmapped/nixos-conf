@@ -9,10 +9,10 @@
       modi = "drun,run";
       show-icons = true;
       location = 0;
-      drun-display-format = "{icon} {name}";
-      display-drun = " Apps";
-      display-run = " Run";
-      display-filebrowser = " File";
+      drun-display-format = "{name}";
+      display-drun = " >";
+      display-run = " >";
+      display-filebrowser = " >";
       icon-theme = "Papirus";
     };
     theme =
@@ -47,13 +47,13 @@
       };
 
       "window" = {
-        width = mkLiteral "35%";
+        height = mkLiteral "360px";
         border = mkLiteral "2px";
         border-color = mkLiteral "@blue";
       };
 
       "element" = {
-        padding = 12;
+        padding = mkLiteral "5px";
         text-color = mkLiteral "@fg-alt";
         background-color = mkLiteral "@bg";
       };
@@ -76,10 +76,9 @@
 
       "entry" = {
         background-color = mkLiteral "@bg-alt";
-        padding = 12;
+        padding = mkLiteral "6px";
         text-color = mkLiteral "@fg";
         border-color = mkLiteral "@blue";
-        border = "0 0 2 0";
       };
 
       "inputbar" = {
@@ -87,13 +86,13 @@
           "prompt"
           "entry"
         ];
-
+        padding = mkLiteral "2px"
       };
 
       "listview" = {
         background-color = mkLiteral "@bg";
         colums = 1;
-        lines = 8;
+        lines = 10;
       };
 
       "mainbox" = {
@@ -107,7 +106,7 @@
       "prompt" = {
         background-color = mkLiteral "@bg-alt";
         enabled = true;
-        padding = mkLiteral "12 0 0 12";
+        padding = mkLiteral "6px";
         text-color = mkLiteral "@fg";
       };
     };
