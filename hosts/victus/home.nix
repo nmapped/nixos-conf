@@ -14,8 +14,10 @@
     ../../modules/home-manager/spotify.nix
     ../../modules/home-manager/emacs.nix
     ../../modules/home-manager/zathura.nix
+    ../../modules/home-manager/textfox.nix
     # ../../modules/home-manager/nvchad.nix
     # inputs.nvchad4nix.homeManagerModule
+      inputs.textfox.homeManagerModules.default
     ../../scripts/restart-xdg-portal.nix
   ];
 

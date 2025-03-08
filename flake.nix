@@ -4,7 +4,11 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     # nixpkgs.url = "github:NixOS/nixpkgs?rev=d2faa1bbca1b1e4962ce7373c5b0879e5b12cef2";
-    stylix.url = "github:danth/stylix";
+
+    stylix = {
+      url = "github:danth/stylix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
 
     disko = {
       url = "github:nix-community/disko";
@@ -13,6 +17,11 @@
 
     agenix = {
       url = "github:ryantm/agenix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    textfox = {
+      url = "github:adriankarlen/textfox";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
@@ -37,7 +46,7 @@
       specialArgs = {inherit inputs;};
       modules = [
         ./hosts/victus/configuration.nix
-	inputs.disko.nixosModules.default
+	      inputs.disko.nixosModules.default
         inputs.home-manager.nixosModules.default
         inputs.stylix.nixosModules.stylix
         inputs.agenix.nixosModules.default
