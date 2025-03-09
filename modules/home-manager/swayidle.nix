@@ -3,15 +3,21 @@
 {
   services.swayidle = {
     enable = true;
+    systemdTarget ="hyprland-session.target";
+    package = pkgs.swayidle;
     timeouts = [
+      # {
+      #   timeout = 300; # 6 minutes
+      #   command = "${pkgs.hyprland}/bin/hyprctl dispatch dpms off";
+      #   resumeCommand = "${pkgs.hyprland}/bin/hyprctl dispatch dpms on";
+      # }
+      # {
+      #   timeout = 330;
+      #   command = "${pkgs.systemd}/bin/systemctl suspend";
+      # }
       {
-        timeout = 300; # 5 minutes
-        command = "hyprlock";
-      }
-      {
-        timeout = 360; # 6 minutes
-        command = "hyprctl dispatch dpms off";
-        resumeCommand = "hyprctl dispatch dpms on";
+        timeout = 360; # 5 minutes
+        command = "${pkgs.hyprlock}/bin/hyprlock";
       }
     ];
     events = [

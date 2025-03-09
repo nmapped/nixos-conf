@@ -60,9 +60,10 @@
     qbittorrent-enhanced
     vesktop
     zathura
-    android-studio
-    android-tools
-    jdk17
+    spotify
+    #android-studio
+    #android-tools
+    #jdk17
     # (androidenv.composeAndroidPackages {
     #   platformVersions = [ "33" ];
     #   buildToolsVersions = [ "33.0.1" ];
